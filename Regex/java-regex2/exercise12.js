@@ -2,6 +2,12 @@
  * Write a Java program to replace Python with Java and code with coding in a given string.
  */
 
+// my solution
+function validate() {
+    let re = /Python/g;
+    return str.replace(re, 'Java').replace(/code/g, 'coding');
+}
+
 var text =
   "Python is an interpreted high-level general-purpose programming language. " +
   "Its design philosophy emphasizes code readability with its use of significant indentation. " +

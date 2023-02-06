@@ -2,6 +2,7 @@
  * Write a JavaScript program to shuffle an array.
  */
 
+// my solution
 function shuffle(myArray) {
   return myArray.sort(() => 0.5 - Math.random());
 }
