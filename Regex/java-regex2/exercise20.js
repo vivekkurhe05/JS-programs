@@ -2,6 +2,11 @@
  * Write a Java program that takes a number and set thousands separator in that number.
  */
 
+// Note
+function validate(str) {
+    return str.replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+}
+
 console.log(validate("100"));
 console.log(validate("1000"));
 console.log(validate("10000"));

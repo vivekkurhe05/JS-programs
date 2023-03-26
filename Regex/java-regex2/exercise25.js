@@ -2,6 +2,12 @@
  * Write a Java program to get last n vowels of a given string.
  */
 
+// my solution
+function validate(str, n) {
+    let re = /[aeiou]/gi;
+    return str.match(re).slice(-n);
+}
+
 console.log(validate("Java", 2));
 console.log(validate("JavaScript", 2));
 console.log(validate("JavaScript", 3));
